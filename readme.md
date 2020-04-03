@@ -1,26 +1,28 @@
-# COVID Pause
+# Korona Haberleri
 
-![nytimes.com](images/korona.gif)
+![tr.sputniknews.com](images/korona.gif)
 
-This extension removes content from websites that contain the following keywords:
+Bu chrome eklentisi aşağıdaki anahtar kelimeleri içeren web sitelerinden içerik kaldırır:
 
 * "COVID"
+* "korona"
+* "Karanatina"
 * "corona" or "virus",
 * "quarantine" or "lockdown"
 * "pandemic"
 
-Additional words may be added at the top of `content.js` as appropriate.
+`content.js` nin üzerine uygun şekilde başka kelimeler de ekleyebilirsiniz.
 
-Some special cases are handled on some of the most popular English-language websites to remove content at the card/article level, instead of removing the text alone.
+Bazı özel durumlar, yalnızca metni kaldırmak yerine makale düzeyindeki içeriği kaldırmak için en popüler Türkçe web sitelerinin bazılarınıda ele alır.
 
 ## Install
 
-1. Download [this file](https://github.com/STUDIOBRN/COVIDPause.git) and unzip.
-2. Go to `chrome://extensions/`, or from the menu bar select "Window > Extensions".
-3. At the top right, click "Developer mode" to enable unpacked extensions.
-4. Click the "Load Unpacked" button at the top left.
-5. Select the unzipped folder.
+1. Yüklemek için [this file](https://github.com/STUDIOBRN/COVIDPause.git) dosyasını indirip açın.
+2. Chrome tarayıcınızı açıp `chrome://extensions/`, menüden extensions'ı seçin.
+3. Sağ üst köşede, geliştirici modu aktif edin.
+4. Sol üste "Load Unpacked" veya Türkçe adıyla indirdiğiniz klasörü yükleye tıklayın.
+5. Dosyayı seçip yüklemeyi yapın.
 
 ## Usage
 
-To temporarily enable/disable COVID Pause, click the COVID Pause icon at the top right.
+Tarayıcının sağ üzerinde yeşil bir virüs gözükecek. Engellenen kelimeleri duraklatmayı geçici olarak etkinleştirmek / devre dışı bırakmak için sağ üst taraftaki yeşil duraklat simgesini tıklayın.
