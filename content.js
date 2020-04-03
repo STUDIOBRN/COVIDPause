@@ -6,17 +6,38 @@ if (host == 'www.facebook.com') {
         node.getAttribute('data-type') == 'type_facebook_app');
 } else if (host == 'news.yahoo.com') {
     condition = node => (
-        node.classList.contains('js-stream-content') || 
+        node.classList.contains('js-stream-content') ||
         node.classList.contains('Cf'));
 } else if (host == 'news.google.com') {
     condition = node => (
-        node.tagName == 'ARTICLE' || 
+        node.tagName == 'ARTICLE' ||
         node.getAttribute('aria-label') == 'COVID-19' ||
         (node.getAttribute('jsdata') && node.getAttribute('jsdata').indexOf('covid') != -1))
-} else if (host == 'www.huffpost.com') {
+} else if (host == 'https://www.internethaber.com/') {
     condition = node => (
         node.classList.contains('card'))
-} else if (host == 'www.washingtonpost.com') {
+      } else if (host == 'https://www.internethaber.com/') {
+          condition = node => (
+              node.classList.contains('card'))
+            } else if (host == 'https://www.sabah.com.tr/') {
+                condition = node => (
+                    node.classList.contains('card'))
+                  } else if (host == 'https://www.milliyet.com.tr/') {
+                      condition = node => (
+                          node.classList.contains('card'))
+                        } else if (host == 'https://www.sozcu.com.tr/') {
+                            condition = node => (
+                                node.classList.contains('card'))
+                              } else if (host == 'https://www.haberler.com/') {
+                                  condition = node => (
+                                      node.classList.contains('card'))
+                                    } else if (host == 'http://www.haber7.com/') {
+                                        condition = node => (
+                                            node.classList.contains('card'))
+                                          } else if (host == 'https://www.ensonhaber.com/') {
+                                              condition = node => (
+                                                  node.classList.contains('card'))
+} else if (host == 'www.hurriyet.com.tr/') {
     condition = node => (
         node.getAttribute('moat-id'))
 } else if (host == 'www.theguardian.com') {
@@ -24,7 +45,7 @@ if (host == 'www.facebook.com') {
         node.classList.contains('fc-item'))
 } else if (host == 'www.youtube.com') {
     condition = node => (
-        node.tagName == 'YTD-VIDEO-RENDERER' || 
+        node.tagName == 'YTD-VIDEO-RENDERER' ||
         node.tagName == 'YTD-GRID-VIDEO-RENDERER')
 } else if (host == 'www.reddit.com') {
     condition = node => (
@@ -75,9 +96,16 @@ function setup() {
     let denylist = [
         'OVID',
         'ovid',
+        'algın',
+        'ayyip',
         'orona',
         'irus',
         'uarantin',
+        'aglik',
+        'vaka',
+        'rdogan',
+        'andemik',
+        'aranatina',
         'ockdown',
         'andemic'
     ];
@@ -93,7 +121,7 @@ function setup() {
     });
 
     var config = {
-        childList: true, 
+        childList: true,
         subtree: true,
         characterData: true
     };
