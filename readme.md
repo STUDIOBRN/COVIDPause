@@ -1,6 +1,6 @@
 # COVID Pause
 
-![nytimes.com](images/covidpause.gif)
+![nytimes.com](images/korona.gif)
 
 This extension removes content from websites that contain the following keywords:
 

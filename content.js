@@ -37,6 +37,12 @@ if (host == 'www.facebook.com') {
                                           } else if (host == 'https://www.ensonhaber.com/') {
                                               condition = node => (
                                                   node.classList.contains('card'))
+                                                } else if (host == 'https://www.cnnturk.com/') {
+                                                    condition = node => (
+                                                        node.classList.contains('card'))
+                                                      } else if (host == 'https://tr.sputniknews.com/') {
+                                                          condition = node => (
+                                                              node.classList.contains('card'))
 } else if (host == 'www.hurriyet.com.tr/') {
     condition = node => (
         node.getAttribute('moat-id'))
@@ -105,6 +111,7 @@ function setup() {
         'vaka',
         'rdogan',
         'andemik',
+        'esafe',
         'aranatina',
         'ockdown',
         'andemic'
